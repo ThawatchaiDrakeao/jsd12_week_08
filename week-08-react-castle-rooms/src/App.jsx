@@ -1,22 +1,29 @@
 import { useState } from "react";
-import Castle from "./components/Castle";
+import Castle from "./components/01_Castle";
 
 export default function App() {
   //   creating state variables
   const [question, setQuestion] = useState("");
+  const [answer, setAnswer] = useState(""); 
 
   const handleQuestion =(e) => {
     console.log(e);
     setQuestion(e.target.value);
   };
 
+  const handleAnswer = (e) => {
+    console.log(e);
+    setAnswer(e.target.value);
+  };
+
   return (
     <div className="pb-80 py-10 gap-y-4 flex flex-col justify-center items-center min-h-screen bg-gray-800 text-white">
       <p className="text-purple-300">
         Message for JSD12:
-        <spa className="text-yellow-300">
+        <span className="text-yellow-300">
           {/* question or waiting for a message  */}
-        </spa>
+          {question ? question : "Waiting for a message ... "}
+        </span>
       </p>
       <textarea
         value={question}
@@ -28,9 +35,10 @@ export default function App() {
         Reply from Secret Room:
         <span className="text-yellow-300">
           {/* answer or waiting for a reply */}
+          {answer ? answer : "Waiting for a reple..."}
         </span>
       </p>
-      <Castle />
+      <Castle question={question} answer={answer} handleAnswer={handleAnswer}/>
     </div>
   );
 }
