@@ -1,11 +1,18 @@
-import Chamber from "./03_Chamber"
+import Tower from "./02_Tower";
 
-export default function Tower({question, answer, handleAnswer}) {
+export default function Castle(banana) {
+  console.log(banana);
   return (
-    <div className="flex flex-col justify-center items-center pt-10 bg-orange-500 w-[90%]">
-      <h1>Tower</h1>
-      {/* Chamber */}
-      <Chamber question={question} answer={answer} handleAnswer={handleAnswer} />
+    <div className="flex flex-col justify-center items-center pt-10 bg-red-500 w-full">
+      <h1>Castle</h1>
+      <Tower
+        question={banana.question}
+        handleAnswer={banana.handleAnswer}
+        answer={banana.answer}
+        vehicle={banana.vehicle}
+        gamePhase={banana.gamePhase}
+        handleSecretRoomAction={banana.handleSecretRoomAction}
+      />
     </div>
   );
 }
