@@ -25,5 +25,18 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
     "vite": "^6.2.0"
-  }
+  },
+  "description": "A concise starter codebase for React apps built with Vite. It ships with modern tooling, Tailwind CSS v4, and basic project scaffolding so you can start building immediately.",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThawatchaiDrakeao/jsd12_week_08.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThawatchaiDrakeao/jsd12_week_08/issues"
+  },
+  "homepage": "https://github.com/ThawatchaiDrakeao/jsd12_week_08#readme"
 }
