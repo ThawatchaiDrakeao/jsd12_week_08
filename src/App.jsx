@@ -5,8 +5,7 @@ import Castle from "./components/01_Castle";
 
 // 2. ดึง Navbar และ PlayerContext ของเราเข้ามา (เช็ค Path ให้ตรงกับของฟงด้วยนะ)
 import Navbar from "./components/10_Navbar";
-import { PlayerContext } from "./contexts/PlayerContext";
-
+import { PlayerContext } from "./contexts/messageContext/PlayerContext";
 export default function App() {
   // --- ส่วนที่ 1: ระบบจัดการชื่อผู้เล่น (ของเรา) ---
   const [playerName, setPlayerName] = useState("");

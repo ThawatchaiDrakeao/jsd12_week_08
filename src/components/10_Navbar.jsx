@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // 1. Import Navbar ที่เราเพิ่งแยกไฟล์ออกมา
-import Navbar from "./components/10_Navbar";
+
 
 function App() {
   const [playerName, setPlayerName] = useState("");
